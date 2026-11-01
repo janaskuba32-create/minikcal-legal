@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniKcal - Legal Docs</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h1, h2, h3 { color: #000; }
+    nav { margin-bottom: 30px; display: flex; gap: 10px; flex-wrap: wrap; }
+    button { padding: 8px 16px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 8px; cursor: pointer; font-weight: 500; }
+    button.active { background: #000; color: #fff; border-color: #000; }
+    .doc { display: none; }
+    .doc.active { display: block; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>MiniKcal</h1>
+  <nav>
+    <button class="active" onclick="showDoc('privacy-pl')">Polityka Prywatności (PL)</button>
+    <button onclick="showDoc('terms-pl')">Regulamin (PL)</button>
+    <button onclick="showDoc('privacy-en')">Privacy Policy (EN)</button>
+    <button onclick="showDoc('terms-en')">Terms of Service (EN)</button>
+  </nav>
+
+  <div id="privacy-pl" class="doc active">
+    <!-- WKLEJ TUTAJ TREŚĆ POLITYKI PL -->
+    <h2>Polityka Prywatności MiniKcal</h2>
+    <p><strong>Ostatnia aktualizacja:</strong> 1 listopada 2026 r.</p>
+    <p>Aplikacja MiniKcal, wydawana pod marką Minimal Studios przez MJC Sp. z o.o. (ul. Plenerowa, Rzeszów), szanuje prywatność użytkowników.</p>
+    <h3>1. Zakres zbieranych danych</h3>
+    <p>Aplikacja przetwarza dane dotyczące wieku, wagi, wzrostu, celów kalorycznych, spożywanych posiłków oraz ilości wypitej wody. Wszelkie te informacje są zapisywane wyłącznie lokalnie w pamięci urządzenia użytkownika (baza danych Room i DataStore).</p>
+    <h3>2. Dostęp do aparatu i analiza AI</h3>
+    <p>Dostęp do kamery jest wykorzystywany wyłącznie w momencie robienia zdjęcia posiłku. Wykonane zdjęcie jest przesyłane bezpiecznym połączeniem HTTPS przez proxy Cloudflare do Google Gemini API w celu rozpoznania makroskładników. Zdjęcia nie są trwale przechowywane na serwerach zewnętrznych, profilowane ani używane do identyfikacji osób.</p>
+    <h3>3. Usługi zewnętrzne</h3>
+    <p>Aplikacja korzysta z usług Cloudflare Inc. oraz Google LLC (Gemini API) w celu realizacji funkcji analizy AI.</p>
+    <h3>4. Usuwanie danych</h3>
+    <p>Użytkownik może w każdej chwili usunąć wszystkie swoje dane, czyszcząc pamięć aplikacji w ustawieniach systemu Android lub odinstalowując MiniKcal.</p>
+    <h3>5. Kontakt</h3>
+    <p>W sprawach prywatności: minimalstudios.contact@gmail.com</p>
+  </div>
+
+  <div id="terms-pl" class="doc">
+    <!-- WKLEJ TUTAJ TREŚĆ REGULAMINU PL -->
+    <h2>Regulamin Aplikacji MiniKcal (Terms of Service)</h2>
+    <p><strong>Ostatnia aktualizacja:</strong> 1 listopada 2026 r.</p>
+    <h3>1. Postanowienia ogólne</h3>
+    <p>Niniejszy Regulamin określa zasady korzystania z aplikacji mobilnej MiniKcal stworzonej pod marką Minimal Studios przez MJC Sp. z o.o.</p>
+    <h3>2. Zastrzeżenie medyczne (Medical Disclaimer)</h3>
+    <p>Aplikacja MiniKcal jest narzędziem wyłącznie informacyjnym i pomocniczym do planowania diety. <strong>Aplikacja nie świadczy porad medycznych, dietetycznych ani zdrowotnych.</strong> Wszelkie obliczenia kalorii oraz szacunki dokonywane przez sztuczną inteligencję mają charakter orientacyjny. Przed wprowadzeniem drastycznych zmian w diecie należy skonsultować się z lekarzem lub dietetykiem.</p>
+    <h3>3. Odpowiedzialność</h3>
+    <p>Twórcy aplikacji dokładają wszelkich starań, aby dane były precyzyjne, jednak nie ponoszą odpowiedzialności za ewentualne rozbieżności w kaloryczności potraw czy skutki wynikające z ich nieprawidłowej interpretacji przez model AI.</p>
+    <h3>4. Własność intelektualna</h3>
+    <p>Wszelkie prawa do kodu, interfejsu graficznego i marki MiniKcal należą do wydawcy.</p>
+    <h3>5. Kontakt</h3>
+    <p>Kontakt: minimalstudios.contact@gmail.com</p>
+  </div>
+
+  <div id="privacy-en" class="doc">
+    <!-- WKLEJ TUTAJ TREŚĆ POLITYKI EN -->
+    <h2>Privacy Policy - MiniKcal</h2>
+    <p><strong>Last updated:</strong> November 1, 2026</p>
+    <p>MiniKcal, published under the Minimal Studios brand by MJC Sp. z o.o. (Plenerowa, Rzeszów, Poland), respects user privacy.</p>
+    <h3>1. Data Collection & Local Storage</h3>
+    <p>MiniKcal processes user-provided inputs such as age, weight, height, nutritional goals, meal logs, and water intake. All user data is stored strictly locally on the device (via local Room database and DataStore).</p>
+    <h3>2. Camera & AI Processing</h3>
+    <p>Camera access is requested solely when taking meal photos. The compressed image is transmitted securely via HTTPS through a Cloudflare proxy to the Google Gemini API to estimate nutritional data. Images are processed ephemerally and are never stored permanently, used for face recognition, or used for personal identification.</p>
+    <h3>3. Third-Party Services</h3>
+    <p>The app relies on Cloudflare Inc. and Google LLC (Gemini API) to execute artificial intelligence food recognition.</p>
+    <h3>4. Data Erasure</h3>
+    <p>You can instantly delete all recorded data at any time by clearing the application storage via Android Settings or uninstalling the app.</p>
+    <h3>5. Contact</h3>
+    <p>Contact: minimalstudios.contact@gmail.com</p>
+  </div>
+
+  <div id="terms-en" class="doc">
+    <!-- WKLEJ TUTAJ TREŚĆ REGULAMINU EN -->
+    <h2>Terms of Service - MiniKcal</h2>
+    <p><strong>Last updated:</strong> November 1, 2026</p>
+    <h3>1. Acceptance of Terms</h3>
+    <p>By downloading or using MiniKcal, provided by Minimal Studios (MJC Sp. z o.o.), you agree to be bound by these Terms.</p>
+    <h3>2. Medical & Health Disclaimer</h3>
+    <p>MiniKcal is intended strictly for informational and educational dietary tracking. <strong>It does not provide medical or clinical advice.</strong> AI calorie estimates are approximations and should not be relied upon for critical dietary management. Always consult a qualified medical professional before undertaking substantial dietary changes.</p>
+    <h3>3. Limitation of Liability</h3>
+    <p>The publisher makes no guarantees regarding 100% accuracy of nutritional values estimated by AI or local databases and shall not be held liable for decisions made based on application data.</p>
+    <h3>4. Intellectual Property</h3>
+    <p>All rights, design assets, and source code of MiniKcal remain the property of the publisher.</p>
+    <h3>5. Contact</h3>
+    <p>Contact: minimalstudios.contact@gmail.com</p>
+  </div>
+
+  <script>
+    function showDoc(id) {
+      document.querySelectorAll('.doc').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('nav button').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
