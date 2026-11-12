@@ -1,119 +1,110 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MiniKcal - Legal & Policies</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 820px; margin: 40px auto; padding: 0 20px; }
-    h1 { margin-bottom: 8px; }
-    .subtitle { color: #666; margin-top: 0; margin-bottom: 24px; }
-    nav { margin-bottom: 24px; display: flex; gap: 8px; flex-wrap: wrap; }
-    button { padding: 8px 14px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; }
-    button.active { background: #000; color: #fff; border-color: #000; }
-    .doc { display: none; }
-    .doc.active { display: block; }
-    code { background: #f0f0f0; padding: 2px 5px; border-radius: 4px; font-size: 13px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniKcal – Dokumenty prawne i usuwanie konta</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #F7F5F0;
+            color: #1C1C1A;
+            line-height: 1.65;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+        h1 { font-size: 26px; margin-bottom: 4px; }
+        h2 { font-size: 20px; margin-top: 36px; border-bottom: 1px solid #DCD8D0; padding-bottom: 6px; }
+        h3 { font-size: 16px; margin-top: 20px; }
+        .meta { font-size: 13px; color: #5C5C58; margin-bottom: 24px; }
+        .nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .nav a {
+            background: #EFECE6;
+            color: #1C1C1A;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .card {
+            background: #EFECE6;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 18px 0;
+        }
+        a { color: #1C1C1A; font-weight: 600; }
+    </style>
 </head>
 <body>
-  <h1>MiniKcal</h1>
-  <p class="subtitle">MinimalStudios</p>
 
-  <nav>
-    <button class="active" onclick="showDoc('privacy-pl', this)">Polityka Prywatności (PL)</button>
-    <button onclick="showDoc('terms-pl', this)">Regulamin (PL)</button>
-    <button onclick="showDoc('refund-pl', this)">Zwroty (PL)</button>
-    <button onclick="showDoc('privacy-en', this)">Privacy Policy (EN)</button>
-    <button onclick="showDoc('terms-en', this)">Terms of Service (EN)</button>
-    <button onclick="showDoc('refund-en', this)">Refund Policy (EN)</button>
-  </nav>
+    <h1>MiniKcal</h1>
+    <div class="meta">Deweloper: MinimalStudios • Kontakt: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a></div>
 
-  <div id="privacy-pl" class="doc active">
-    <h2>Polityka Prywatności MiniKcal</h2>
-    <p><strong>Ostatnia aktualizacja:</strong> 3 listopada 2026 r.</p>
-    <p>Aplikacja MiniKcal, wydawana przez MinimalStudios, szanuje prywatność użytkowników i dba o ochronę ich danych osobowych zgodnie z RODO.</p>
-    <h3>1. Zakres zbieranych danych</h3>
-    <p>Aplikacja przetwarza dane dotyczące wieku, wagi, wzrostu, celów kalorycznych, spożywanych posiłków oraz ilości wypitej wody. Wszelkie te informacje są zapisywane lokalnie w pamięci urządzenia użytkownika (baza danych Room i DataStore).</p>
-    <h3>2. Dostęp do aparatu i analiza AI</h3>
-    <p>Dostęp do kamery jest wykorzystywany wyłącznie w momencie robienia zdjęcia posiłku. Wykonane zdjęcie jest przesyłane bezpiecznym połączeniem HTTPS przez proxy Cloudflare do Google Gemini API w celu rozpoznania makroskładników. Zdjęcia nie są trwale przechowywane na serwerach zewnętrznych, profilowane ani używane do identyfikacji osób.</p>
-    <h3>3. Usługi zewnętrzne</h3>
-    <p>Aplikacja korzysta z usług Cloudflare Inc. oraz Google LLC (Gemini API) w celu realizacji funkcji analizy AI.</p>
-    <h3>4. Usuwanie danych</h3>
-    <p>Użytkownik może w każdej chwili usunąć wszystkie swoje dane, czyszcząc pamięć aplikacji w ustawieniach systemu Android lub odinstalowując MiniKcal.</p>
-    <h3>5. Kontakt</h3>
-    <p>W sprawach prywatności: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a></p>
-  </div>
+    <div class="nav">
+        <a href="#polityka-prywatnosci">Polityka prywatności</a>
+        <a href="#regulamin">Regulamin</a>
+        <a href="#usun-konto">Usuwanie konta</a>
+    </div>
 
-  <div id="terms-pl" class="doc">
-    <h2>Regulamin Aplikacji MiniKcal</h2>
-    <p><strong>Ostatnia aktualizacja:</strong> 3 listopada 2026 r.</p>
-    <h3>1. Postanowienia ogólne</h3>
-    <p>Niniejszy Regulamin określa zasady korzystania z aplikacji mobilnej MiniKcal stworzonej przez MinimalStudios.</p>
-    <h3>2. Zastrzeżenie medyczne</h3>
-    <p>Aplikacja MiniKcal jest narzędziem wyłącznie informacyjnym i pomocniczym do planowania diety. <strong>Aplikacja nie świadczy porad medycznych ani dietetycznych.</strong> Szacunki dokonywane przez sztuczną inteligencję mają charakter orientacyjny.</p>
-    <h3>3. Własność intelektualna</h3>
-    <p>Wszelkie prawa do kodu, interfejsu graficznego i marki MiniKcal należą do wydawcy.</p>
-    <h3>4. Kontakt</h3>
-    <p>Kontakt: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a></p>
-  </div>
+    <!-- SEKCJA 1: POLITYKA PRYWATNOŚCI -->
+    <section id="polityka-prywatnosci">
+        <h2>1. Polityka prywatności</h2>
+        <p>Niniejsza Polityka prywatności określa zasady przetwarzania danych w aplikacji mobilnej <strong>MiniKcal</strong>, stworzonej przez <strong>MinimalStudios</strong>.</p>
+        
+        <h3>Jakie dane zbieramy?</h3>
+        <ul>
+            <li><strong>Dane konta:</strong> adres e-mail oraz identyfikator użytkownika (UID) obsługiwane za pośrednictwem usługi Google Firebase Authentication.</li>
+            <li><strong>Dane biometryczne i żywieniowe:</strong> waga, wzrost, wiek, płeć, poziom aktywności, cele kaloryczne oraz historia zapisanych posiłków (przechowywane lokalnie na urządzeniu oraz synchronizowane w chmurze Google Firebase Firestore).</li>
+            <li><strong>Zdjęcia posiłków:</strong> przesyłane tymczasowo do analizy przez model sztucznej inteligencji (Google Gemini API) wyłącznie w celu oszacowania kalorii i makroskładników. Zdjęcia nie są trwale zapisywane na naszych serwerach.</li>
+        </ul>
 
-  <div id="refund-pl" class="doc">
-    <h2>Polityka Zwrotów (Refund Policy) – MiniKcal</h2>
-    <p><strong>Ostatnia aktualizacja:</strong> 3 listopada 2026 r.</p>
-    <p>Wszelkie transakcje za subskrypcje i wersję PRO są realizowane przez Google Play (Google Ireland Limited).</p>
-    <h3>1. Standardowy zwrot Google Play (do 48h)</h3>
-    <p>W ciągu 48 godzin od transakcji wniosek o zwrot składa się bezpośrednio na koncie Google Play: <a href="https://support.google.com/googleplay/workflow/8556038" target="_blank">Google Play Refunds</a>.</p>
-    <h3>2. Reklamacje po 48 godzinach</h3>
-    <p>W przypadku problemów technicznych lub braku aktywacji usługi po 48h skontaktuj się z nami: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a>, podając numer zamówienia (<code>GPA.XXXX-XXXX-XXXX-XXXXX</code>).</p>
-    <h3>3. Subskrypcje</h3>
-    <p>Anulowanie subskrypcji zapobiega odnowieniu na kolejny cykl. Dostęp PRO pozostaje aktywny do końca opłaconego okresu.</p>
-  </div>
+        <h3>Podmioty przetwarzające dane</h3>
+        <p>W celu zapewnienia działania aplikacji korzystamy z bezpiecznej infrastruktury zewnętrznej: <strong>Google Firebase</strong> (uwierzytelnianie i baza danych), <strong>Cloudflare Workers</strong> (ochrona zapytań API) oraz <strong>Google Play</strong> (obsługa płatności i subskrypcji).</p>
+    </section>
 
-  <div id="privacy-en" class="doc">
-    <h2>Privacy Policy - MiniKcal</h2>
-    <p><strong>Last updated:</strong> November 3, 2026</p>
-    <p>MiniKcal, published by MinimalStudios, respects user privacy and complies with applicable data protection regulations.</p>
-    <h3>1. Data Collection & Local Storage</h3>
-    <p>MiniKcal processes user-provided inputs such as age, weight, height, nutritional goals, meal logs, and water intake. All user data is stored strictly locally on the device (Room & DataStore).</p>
-    <h3>2. Camera & AI Processing</h3>
-    <p>Camera access is requested solely for meal photos. The image is securely processed ephemerally via Cloudflare and Google Gemini API and is never used for personal profiling.</p>
-    <h3>3. Data Erasure</h3>
-    <p>You can erase all data at any time by clearing application data in Android Settings or by uninstalling the application.</p>
-    <h3>4. Contact</h3>
-    <p>Contact: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a></p>
-  </div>
+    <!-- SEKCJA 2: REGULAMIN -->
+    <section id="regulamin">
+        <h2>2. Regulamin korzystania z aplikacji</h2>
+        <ul>
+            <li><strong>Charakter informacyjny AI:</strong> Wartości kaloryczne oraz makroskładniki obliczane przez sztuczną inteligencję w aplikacji MiniKcal mają charakter wyłącznie poglądowy i szacunkowy. Aplikacja nie stanowi wyrobu medycznego ani profesjonalnej porady dietetycznej czy lekarskiej.</li>
+            <li><strong>Plan darmowy i subskrypcja PRO:</strong> Wersja darmowa umożliwia wykonanie ograniczonej liczby analiz AI dziennie. Subskrypcja MiniKcal PRO (miesięczna lub roczna) rozliczana jest bezpośrednio przez Google Play Store i odnawia się automatycznie, o ile nie zostanie anulowana w ustawieniach konta Google Play przed końcem okresu rozliczeniowego.</li>
+            <li><strong>Odpowiedzialność:</strong> Użytkownik zobowiązuje się do korzystania z aplikacji zgodnie z jej przeznaczeniem oraz do niepodejmowania prób obchodzenia limitów technicznych API.</li>
+        </ul>
+    </section>
 
-  <div id="terms-en" class="doc">
-    <h2>Terms of Service - MiniKcal</h2>
-    <p><strong>Last updated:</strong> November 3, 2026</p>
-    <h3>1. Acceptance of Terms</h3>
-    <p>By using MiniKcal, provided by MinimalStudios, you agree to these Terms.</p>
-    <h3>2. Health Disclaimer</h3>
-    <p>MiniKcal is strictly for informational and dietary tracking purposes. <strong>It does not provide medical advice.</strong> AI calorie estimates are approximations.</p>
-    <h3>3. Contact</h3>
-    <p>Contact: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a></p>
-  </div>
+    <!-- SEKCJA 3: USUWANIE KONTA -->
+    <section id="usun-konto">
+        <h2>3. Usuwanie konta i danych (MiniKcal)</h2>
+        <p>Użytkownicy aplikacji <strong>MiniKcal</strong> (deweloper: <strong>MinimalStudios</strong>) mogą w każdej chwili trwale usunąć swoje konto oraz wszystkie powiązane z nim dane.</p>
 
-  <div id="refund-en" class="doc">
-    <h2>Refund Policy - MiniKcal</h2>
-    <p><strong>Last updated:</strong> November 3, 2026</p>
-    <p>Purchases and PRO subscriptions are securely processed by Google Play (Google Ireland Limited).</p>
-    <h3>1. Google Play Returns (Within 48 Hours)</h3>
-    <p>Within 48 hours of purchase, request automated refunds directly via Google Play: <a href="https://support.google.com/googleplay/workflow/8556038" target="_blank">Google Play Refunds</a>.</p>
-    <h3>2. Technical Support & Manual Inquiries</h3>
-    <p>If you experience technical issues after 48 hours, contact: <a href="mailto:minimalstudios.apps@gmail.com">minimalstudios.apps@gmail.com</a> with your Google Play Order ID (<code>GPA.XXXX-XXXX-XXXX-XXXXX</code>).</p>
-    <h3>3. Subscription Cancellations</h3>
-    <p>Subscriptions can be canceled at any time in Google Play settings to prevent upcoming renewals.</p>
-  </div>
+        <div class="card">
+            <h3>Sposób A: Natychmiastowe usunięcie w aplikacji</h3>
+            <ol>
+                <li>Otwórz aplikację <strong>MiniKcal</strong> na swoim telefonie.</li>
+                <li>Przejdź do zakładki <strong>Konto</strong> w dolnym pasku nawigacji.</li>
+                <li>Przewiń na sam dół ekranu i wybierz <strong>Usuń konto</strong>.</li>
+                <li>Potwierdź decyzję w oknie dialogowym przyciskiem <strong>Usuń trwale</strong>.</li>
+            </ol>
+        </div>
 
-  <script>
-    function showDoc(id, btn) {
-      document.querySelectorAll('.doc').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('nav button').forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      btn.classList.add('active');
-    }
-  </script>
+        <div class="card">
+            <h3>Sposób B: Zgłoszenie przez e-mail (bez dostępu do aplikacji)</h3>
+            <p>Jeśli nie masz już zainstalowanej aplikacji, wyślij wiadomość z adresu e-mail powiązanego z Twoim kontem na adres <a href="mailto:minimalstudios.apps@gmail.com?subject=Usuni%C4%99cie%20konta%20MiniKcal">minimalstudios.apps@gmail.com</a> z tematem <strong>„Usunięcie konta MiniKcal”</strong>. Konto zostanie usunięte w ciągu maksymalnie <strong>7 dni roboczych</strong>.</p>
+        </div>
+
+        <h3>Zakres usuwanych danych</h3>
+        <ul>
+            <li><strong>Dane usuwane trwale:</strong> konto Firebase Auth, adres e-mail, dane biometryczne (waga, wzrost, wiek, płeć, cele) oraz wszystkie wpisy posiłków z bazy Firestore i pamięci urządzenia.</li>
+            <li><strong>Dane zachowywane tymczasowo:</strong> anonimowe liczniki zapytań API (kasowane automatycznie po 48 godzinach) oraz historia płatności zarządzana wyłącznie przez Google Play zgodnie z przepisami podatkowymi.</li>
+        </ul>
+    </section>
+
 </body>
 </html>
