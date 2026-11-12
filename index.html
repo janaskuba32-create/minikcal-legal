@@ -85,12 +85,12 @@
         </div>
 
         <div class="nav">
-            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#sec-1-en">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>
             <a href="#delete-account">Account Deletion</a>
         </div>
 
-        <section id="privacy-policy">
+        <section id="sec-1-en">
             <h2>1. Privacy Policy</h2>
             <p>This Privacy Policy describes how user data is collected, used, and protected in the <strong>MiniKcal</strong> mobile application, developed by <strong>MinimalStudios</strong>.</p>
             
@@ -149,12 +149,12 @@
         </div>
 
         <div class="nav">
-            <a href="#polityka-prywatnosci">Polityka prywatności</a>
+            <a href="#sec-1-pl">Polityka prywatności</a>
             <a href="#regulamin">Regulamin</a>
             <a href="#usun-konto">Usuwanie konta</a>
         </div>
 
-        <section id="polityka-prywatnosci">
+        <section id="sec-1-pl">
             <h2>1. Polityka prywatności</h2>
             <p>Niniejsza Polityka prywatności określa zasady przetwarzania danych w aplikacji mobilnej <strong>MiniKcal</strong>, stworzonej przez <strong>MinimalStudios</strong>.</p>
             
@@ -214,11 +214,10 @@
             document.documentElement.lang = lang;
         }
 
-        // Auto-detect browser language or hash
         const hash = window.location.hash;
-        if (hash === '#usun-konto' || hash === '#polityka-prywatnosci' || hash === '#regulamin') {
+        if (hash === '#usun-konto' || hash === '#sec-1-pl' || hash === '#regulamin') {
             setLang('pl');
-        } else if (hash === '#delete-account' || hash === '#privacy-policy' || hash === '#terms') {
+        } else if (hash === '#delete-account' || hash === '#sec-1-en' || hash === '#terms') {
             setLang('en');
         } else if (navigator.language && navigator.language.toLowerCase().startsWith('pl')) {
             setLang('pl');
